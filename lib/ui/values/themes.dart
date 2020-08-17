@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'colors.dart';
 
 class AppThemes {
@@ -9,5 +10,11 @@ class AppThemes {
     primaryColorLight: AppColors.primaryColorLight,
     primaryColorDark: AppColors.primaryColorDark,
     accentColor: AppColors.accentColor,
+  );
+
+  static SystemUiOverlayStyle systemUiOverlayStyle = SystemUiOverlayStyle(
+    systemNavigationBarColor: AppColors.pink,
+    statusBarColor: AppColors.pink,
+    statusBarIconBrightness: Brightness.dark
   );
 }
