@@ -42,111 +42,127 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Expanded(
-                  child: GestureDetector(
+                Material(
+                  type: MaterialType.transparency,
+                  child: InkWell(
+                    customBorder: CircleBorder(),
+                    splashColor: currentBottomNavBarItemIndex == 0 ? AppColors.purpleLight : AppColors.tealLight,
                     onTap: (){
                       setState(() {
                         currentBottomNavBarItemIndex = 0;
                       });
                     },
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.home,
-                          semanticLabel: "Home",
-                          color: currentBottomNavBarItemIndex == 0 ? AppColors.teal : AppColors.purple,
-                          size: currentBottomNavBarItemIndex == 0 ? 32 : 24
-                        ),
-                        Text("Home",
-                          style: TextStyle(
-                            color: currentBottomNavBarItemIndex == 0 ? AppColors.teal : AppColors.purple,
-                            fontSize: currentBottomNavBarItemIndex == 0 ? 16 : 0
-                          )
-                        )
-                      ],
+                    child: Container(
+                      width: 56,
+                      height: 56,
+                      decoration: BoxDecoration(
+                        color: currentBottomNavBarItemIndex == 0 ? AppColors.tealLight : AppColors.purpleLight,
+                        borderRadius: BorderRadius.all(Radius.circular(50))
+                      ),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.home,
+                            semanticLabel: "Home",
+                            color: currentBottomNavBarItemIndex == 0 ? AppColors.teal : AppColors.purple
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
-                Expanded(
-                  child: GestureDetector(
+                Material(
+                  type: MaterialType.transparency,
+                  child: InkWell(
+                    customBorder: CircleBorder(),
+                    splashColor: currentBottomNavBarItemIndex == 1 ? AppColors.purpleLight : AppColors.tealLight,
                     onTap: (){
                       setState(() {
                         currentBottomNavBarItemIndex = 1;
                       });
                     },
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.shopping_cart,
-                          semanticLabel: "Cart",
-                          color: currentBottomNavBarItemIndex == 1 ? AppColors.teal : AppColors.purple,
-                          size: currentBottomNavBarItemIndex == 1 ? 32 : 24,
-                        ),
-                        Text("Cart",
-                          style: TextStyle(
+                    child: Container(
+                      width: 56,
+                      height: 56,
+                      decoration: BoxDecoration(
+                        color: currentBottomNavBarItemIndex == 1 ? AppColors.tealLight : AppColors.purpleLight,
+                        borderRadius: BorderRadius.all(Radius.circular(50))
+                      ),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.shopping_cart,
+                            semanticLabel: "Cart",
                             color: currentBottomNavBarItemIndex == 1 ? AppColors.teal : AppColors.purple,
-                            fontSize: currentBottomNavBarItemIndex == 1 ? 16 : 0
-                          )
-                        )
-                      ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
-                Expanded(
-                  child: GestureDetector(
+                Material(
+                  type: MaterialType.transparency,
+                  child: InkWell(
+                    customBorder: CircleBorder(),
+                    splashColor: currentBottomNavBarItemIndex == 2 ? AppColors.purpleLight : AppColors.tealLight,
                     onTap: (){
                       setState(() {
                         currentBottomNavBarItemIndex = 2;
                       });
                     },
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.favorite,
-                          semanticLabel: "Wishlist",
-                          color: currentBottomNavBarItemIndex == 2 ? AppColors.teal : AppColors.purple,
-                          size: currentBottomNavBarItemIndex == 2 ? 32 : 24
-                        ),
-                        Text("Wishlist",
-                          style: TextStyle(
+                    child: Container(
+                      width: 56,
+                      height: 56,
+                      decoration: BoxDecoration(
+                        color: currentBottomNavBarItemIndex == 2 ? AppColors.tealLight : AppColors.purpleLight,
+                        borderRadius: BorderRadius.all(Radius.circular(50))
+                      ),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.favorite,
+                            semanticLabel: "Wishlist",
                             color: currentBottomNavBarItemIndex == 2 ? AppColors.teal : AppColors.purple,
-                            fontSize: currentBottomNavBarItemIndex == 2 ? 16 : 0
-                          )
-                        )
-                      ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),
-                Expanded(
-                  child: GestureDetector(
+                Material(
+                  type: MaterialType.transparency,
+                  child: InkWell(
+                    customBorder: CircleBorder(),
+                    splashColor: currentBottomNavBarItemIndex == 3 ? AppColors.purpleLight : AppColors.tealLight,
                     onTap: (){
                       setState(() {
                         currentBottomNavBarItemIndex = 3;
                       });
                     },
-                    child: Column(
-                      mainAxisSize: MainAxisSize.max,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Icon(
-                          Icons.person,
-                          semanticLabel: "Profile",
-                          color: currentBottomNavBarItemIndex == 3 ? AppColors.teal : AppColors.purple,
-                          size: currentBottomNavBarItemIndex == 3 ? 32 : 24
-                        ),
-                        Text("Profile",
-                          style: TextStyle(
-                            color: currentBottomNavBarItemIndex == 3 ? AppColors.teal : AppColors.grayDark,
-                            fontSize: currentBottomNavBarItemIndex == 3 ? 16 : 0
+                    child: Container(
+                      width: 56,
+                      height: 56,
+                      decoration: BoxDecoration(
+                        color: currentBottomNavBarItemIndex == 3 ? AppColors.tealLight : AppColors.purpleLight,
+                        borderRadius: BorderRadius.all(Radius.circular(50))
+                      ),
+                      child: Column(
+                        mainAxisSize: MainAxisSize.max,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.person,
+                            semanticLabel: "Profile",
+                            color: currentBottomNavBarItemIndex == 3 ? AppColors.teal : AppColors.purple,
                           ),
-                        )
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),
