@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:warda/ui/screens/home_screen.dart';
 import 'package:warda/ui/screens/splash_screen.dart';
 import 'package:warda/ui/values/themes.dart';
 import 'package:flutter/services.dart';
@@ -11,8 +12,13 @@ class WardaApp extends StatelessWidget {
     SystemChrome.setSystemUIOverlayStyle(AppThemes.systemUiOverlayStyle);
     return MaterialApp(
       title: 'Warda',
+      debugShowCheckedModeBanner: false,
       theme: AppThemes.appTheme,
       home: SplashScreen(),
+      routes: {
+        '/SplashScreen' : (context) => SplashScreen(),
+        '/HomeScreen' : (context) => HomeScreen(),
+      }
     );
   }
 }
