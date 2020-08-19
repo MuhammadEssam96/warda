@@ -32,7 +32,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         return Text("Cart");
                       case 2:
                         return Text("Wishlist");
-                      case 0:
+                      case 3:
                       default:
                         return Text("Profile");
                     }
