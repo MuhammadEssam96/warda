@@ -21,7 +21,24 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisSize: MainAxisSize.max,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.asset('assets/images/warda_logo.png', width: MediaQuery.of(context).size.width * 0.25,)
+              Image.asset('assets/images/warda_logo.png', width: MediaQuery.of(context).size.width * 0.25,),
+              Expanded(
+                child: Builder(
+                  builder: (context) {
+                    switch (currentBottomNavBarItemIndex) {
+                      case 0:
+                        return Text("Home");
+                      case 1:
+                        return Text("Cart");
+                      case 2:
+                        return Text("Wishlist");
+                      case 0:
+                      default:
+                        return Text("Profile");
+                    }
+                  }
+                ),
+              )
             ],
           ),
         ),
