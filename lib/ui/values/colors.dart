@@ -10,6 +10,7 @@ class AppColors {
   static Color red = Color(0xFFEC4C4C);
   static Color purple = Color(0xFF533A71);
   static Color purpleDark = Color(0xFF4C2C69);
+  static Color lightTeal = Colors.teal[100];
 
   static Color primaryColor = pink;
   static Color primaryColorLight = white;
