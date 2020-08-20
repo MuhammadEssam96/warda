@@ -14,19 +14,14 @@ class ShoppingCartWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-      Text('Shopping cart',style:TextStyle(
-        color: AppColors.grayDark,
-        fontSize: 20,
-      ),),
-      SizedBox(height: 20,),
       Padding(
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(2),
         child: Card(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15)
           ),
           child: Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.only(bottom: 8,left:8,right: 8,top: 2),
             //row have 3 rows.
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
