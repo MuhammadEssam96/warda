@@ -9,12 +9,11 @@ class ShoppingCartWidget extends StatelessWidget {
   }) : super(key: key);
 
   final double mediaQ;
-
+  
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-      Image.asset('assets/images/warda_logo.png',width:mediaQ*0.25),
       Text('Shopping cart',style:TextStyle(
         color: AppColors.grayDark,
         fontSize: 20,
@@ -51,7 +50,7 @@ class ShoppingCartWidget extends StatelessWidget {
             Column(
               children: [
                 Row(children: [
-                  CardButton(iconButton: FontAwesomeIcons.plus),
+                  CardButton(iconButton: FontAwesomeIcons.plus,buttonFunction: (){},),
                   SizedBox(width:15),
                   Text('15',style: TextStyle(color: AppColors.grayDark,fontWeight: FontWeight.bold,fontSize: 18),),
                   SizedBox(width:15),
