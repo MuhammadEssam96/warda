@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:warda/ui/screens/shopping_cart_screen.dart';
 import 'package:warda/ui/values/colors.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -29,7 +30,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       case 0:
                         return Text("Home");
                       case 1:
-                        return Text("Cart");
+                        return ShoppingCartScreen();
                       case 2:
                         return Text("Wishlist");
                       case 0:
