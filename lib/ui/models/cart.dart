@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 
 class CartItem {
   final String id;
@@ -10,11 +9,6 @@ class CartItem {
 
 
 }
-class Cart{
-  List item=[];
 
-  addToCart(){
-    item.add(1);
-  }
-}
+
 
