@@ -26,6 +26,16 @@ class ShoppingCartScreen extends StatelessWidget {
           return ShoppingCartWidget(mediaQ: mediaQ);
         },),
       ),
+      Expanded(flex: 2,
+      child: Container(
+        alignment: Alignment.center,
+        width: mediaQ-26,
+        margin: EdgeInsets.all(5),
+        decoration: BoxDecoration(
+          color: Colors.teal,
+          borderRadius: BorderRadius.circular(30), ),
+          child: Text('Procced to checkout',style: TextStyle(color: AppColors.white),),
+      ),),
     ],
     );
     
